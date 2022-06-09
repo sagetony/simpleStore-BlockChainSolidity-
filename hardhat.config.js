@@ -1,5 +1,5 @@
 // const env = require("hardhat");
-
+require("dotenv").config();
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -19,12 +19,12 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  // defaultNetwork: "hardhat",
-  // networks: {
-  //   rinkeby: {
-  //       url: env.process.RINKEBY_RPC_URL,
-  //       accounts: [env.process.]
-  //   },
-  // },
+  defaultNetwork: "hardhat",
+  networks: {
+    rinkeby: {
+      url: process.env.RINKEBY_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },
   solidity: "0.8.7",
 };
