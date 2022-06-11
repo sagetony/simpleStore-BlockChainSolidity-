@@ -6,8 +6,11 @@
   "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "chai": "^4.3.6",
     "dotenv": "^16.0.1",
-    "hardhat": "^2.9.9"
+    "hardhat": "^2.9.9",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.7.21"
   },
   "dependencies": {
     "@ethereum-waffle/compiler": "^3.4.4",
